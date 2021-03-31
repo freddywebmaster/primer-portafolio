@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color:#fff
 }
 
 body{
-    background-color: #f3f3f3;
+    background-color: #212121;
 }
 a{
     text-decoration: none;
@@ -42,7 +43,7 @@ header .barra-busqueda{
     width: 70%;
     height: 40px;
     line-height: 40px;
-    background-color: #fff;
+    background-color: #363636;
     padding: 0 20px;
     border-radius: 100px;
     border: none;
@@ -60,4 +61,37 @@ header .categorias a{
     margin: 10px 20px;
     font-size: 18px;
     font-weight: 700;
+}
+header .categorias a.activo{
+    color: rgb(255, 255, 255);
+}
+.fa-terminal{
+    color: orangered;
+}
+
+/*GRID*/
+.grid {
+    position: relative;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s linear 1s;
+}
+.grid.imagenes-cargadas{
+    opacity: 1;
+}
+.grid .item {
+    position: absolute;
+    display: block;
+    padding: 0px;
+    margin: 10px;
+    width: calc(33.33333% - 20px);
+}
+.grid .item-contenido{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.grid .item img{
+    width: 100%;
+    cursor: pointer;
 }
