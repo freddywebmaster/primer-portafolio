@@ -82,6 +82,7 @@ header nav {
     width: 30%;
     justify-content: space-around;
     align-items: center;
+    font-size: 1.5rem;
 }
 .enlaces a {
     border-top: 2px solid transparent;
@@ -90,6 +91,8 @@ header nav {
     transition: 0.7s ease-out;
     color: #fff;
     text-decoration: none;
+    margin-right: 1.5rem;
+    text-transform: uppercase;
 }
 .enlaces a:hover,
 .active {
@@ -279,6 +282,14 @@ main{
     }
 }
 /*PROYECTOS CARDS*/
+.imagen{
+    overflow: hidden;
+}
+.imagen img:hover{
+    transform:scale(1.5);
+    transition: all 3s ease;
+}
+
 .proyectos{
     height: 100%;
     background-color: #000;
@@ -386,4 +397,39 @@ section h2{
     .derechos{
         padding-top: 1rem;
     }
+}
+
+/*LOADER*/
+
+#contenedor_carga{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 100;
+}
+#carga{
+    border: 15px solid #fff;
+    border-top-color: orangered ;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-animation: girar 1.5s linear infinite;
+    -o-animation: girar 1.5s linear infinite;
+    animation: girar 1.5s linear infinite;
+}
+
+@keyframes girar {
+    from{ transform: rotate(0deg);}
+    to{ transform: rotate(360deg);}
 }
