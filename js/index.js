@@ -3,6 +3,11 @@ window.addEventListener('scroll', function(){
     var navegacion = document.querySelector('nav');
     navegacion.classList.toggle('nav-scroll',window.scrollY>0);
 });
+//BOTON RETACHAR
+window.addEventListener('scroll', function(){
+    var retornar = document.querySelector('#return');
+    retornar.classList.toggle('mostrar',window.scrollY>0);
+});
 
 //TYPED INICIACION
 window.addEventListener('load', function(){

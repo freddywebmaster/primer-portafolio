@@ -1,5 +1,16 @@
-/*nav*/@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+/*FUENtes*/@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
+/*VARIABLES*/
+
+:root{
+    --orange: orangered;
+    --dark: #212121;
+    --dark-two: #363636;
+    --white: #fff;
+    --black: #000;
+    --titles: #d8d4a3;
+    --purple: #9770c9;
+}
 *{
     margin: 0;
     padding: 0;
@@ -9,28 +20,40 @@
     font-family: 'Abel', sans-serif;
 }
 body{
-    background-color: #000;
+    background-color: var(--black);
 }
 html{
     scroll-behavior: smooth;
 }
 /*UTILIDADES*/
+.title-w{
+    color: var(--titles)!important;
+}
 .line{
-    background-color: orangered;
+    background-color: var(--orange);
     width: 10%;
     height: 0.5rem;
     margin: 0 auto;
 }
 .line2{
-    background-color: orangered;
+    background-color: var(--orange);
     width:20%;
     height: 0.5rem;
+}
+.m-right{
+    margin-right: 1rem;
 }
 .m-top{
     margin-top: 1rem;
 }
+.m-top-2{
+    margin-top: 2rem;
+}
+.m-top-4{
+    margin-top: 4rem;
+}
 a{
-    color: #fff;
+    color: var(--white);
 }
 img {
     max-width: 100%;
@@ -41,29 +64,25 @@ img {
     border: none;
 }
 .btn-primario{
-    background-color: orangered;
-    color: #fff;
+    background-color: var(--orange);
+    color: var(--white);
     font-size: 1.2rem;
-    border:1px solid #fff;
+    border:1px solid var(--white);
 }
 .btn-secundario{
-    background-color: orangered;
-    color: #fff;
-    border:1px solid #fff;
+    background-color: var(--orange);
+    color: var(--white);
+    border:1px solid var(--white);
     font-weight: 900;
     display: inline-block;
 }
 .btn-tres{
-    background-color: rgb(151, 112, 201);
-    color: #fff;
-    border:1px solid #fff;
+    background-color: #9770c9;
+    color: var(--white);
+    border:1px solid var(--white);
     font-weight: 900;
     text-align: center;
 }
-.animacion{
-    transition: all 1s ease-in-out;
-}
-
 /**NAVEGACION*/
 header nav {
     position:fixed;
@@ -89,7 +108,7 @@ header nav {
     border-bottom: 2px solid transparent;
     padding: 4px 0;
     transition: 0.7s ease-out;
-    color: #fff;
+    color: var(--titles);
     text-decoration: none;
     margin-right: 1.5rem;
     text-transform: uppercase;
@@ -100,7 +119,7 @@ header nav {
     border-bottom: 2px solid coral;
 }
 .nav-scroll{
-    background-color: #212121;
+    background-color: var(--dark);
     transition: all 0.5s ease-in-out;
 }
 .nav-scroll .enlaces,
@@ -114,7 +133,7 @@ header nav {
         justify-content: center;
         height: 70px;
         align-items: center;
-        color: #fff;
+        color: var(--white);
         background: transparent;
         padding: 10px;
         z-index: 100;
@@ -126,9 +145,9 @@ header nav {
         height: 100vh;
         right: 0;
         width: 100%;
+        font-size: 1rem;
         flex-direction: column;
         transition: all 1s ease;
-        background: #f46b45;
         background: -webkit-linear-gradient(to right, #eea849, #f46b45);
         background: linear-gradient(to right, #eea849, #f46b45);
     }
@@ -146,10 +165,10 @@ header nav {
 .contenedor-a{
     height: 100vh;
     max-width: 100%;
-    background-image: linear-gradient( rgba(0,0,0,0.5),rgba(0,0,0,0.5) ),url(../img/intro-bg.jpg);
+    background-image: linear-gradient( rgba(0,0,0,0.6),rgba(0,0,0,0.6) ),url(../img/intro-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
 }
 
 
@@ -181,10 +200,10 @@ header nav {
     text-transform: none;
 }
 .logo i{
-    color: orangered;
+    color: var(--orange);
 }
 .logo{
-    color: #fff;
+    color: var(--white);
     margin-top: 0.8rem;
     margin-left: 0.2rem;
     font-size: 1.5rem;
@@ -213,8 +232,8 @@ header nav {
 
 /*About*/
 main{
-    background-color: #000;
-    color: #fff;
+    background-color: var(--black);
+    color: var(--white);
     height: 100vh;
 }
 .title-info{
@@ -224,6 +243,9 @@ main{
 .foto{
     padding: 2rem;
 }
+.foto img{
+    border-radius: 2rem;
+}
 .contenedor-b{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -232,7 +254,7 @@ main{
     height: 100%;
     gap: 2rem;
     align-items: center;
-    background-color: #212121;
+    background-color: var(--dark);
 }
 .description h3{
     margin-bottom: 1rem;
@@ -241,16 +263,14 @@ main{
 .description p{
     margin-bottom: 1rem;
 }
-
 .languajes{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
-    background-color: #363636;
+    background-color: var(--dark-two);
     padding: 1rem;
     gap: 10px;
 }
-
 .habilidad{
     text-align: center;
 }
@@ -268,7 +288,9 @@ main{
 .star-silver{
     color: silver;
 }
-
+.btn-main{
+    text-align: center;
+}
 @media (max-width: 768px) {
     main{
         height: 100%;
@@ -279,6 +301,9 @@ main{
     .foto{
         padding: 1rem;
         margin-top: 3rem;
+    }
+    .btn-main{
+        text-align: center;
     }
 }
 /*PROYECTOS CARDS*/
@@ -292,7 +317,7 @@ main{
 
 .proyectos{
     height: 100%;
-    background-color: #000;
+    background-color: var(--black);
     color: azure;
 }
 .info-proyecto{
@@ -306,8 +331,8 @@ main{
     margin: 1rem;
 }
 .carta{
-    background-color: #212121;
-    color: #fff;
+    background-color: var(--dark);
+    color: var(--white);
 }
 .title-proyect{
     display: flex;
@@ -319,7 +344,7 @@ main{
     margin-left: 0.5rem;
 }
 .fa-plus-square{
-    color: orangered;
+    color: var(--orange);
     font-size: 2rem;
 }
 .botones-proyectos{
@@ -355,11 +380,12 @@ section h2{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    padding: 4rem 0;
 }
 .contacto{   
     margin: 0 auto;
-    color: #fff;
-    background-color: #212121;
+    color: var(--white);
+    background-color: var(--dark);
     justify-content: center;
     padding: 1rem;
 }
@@ -376,13 +402,13 @@ section h2{
 .derechos{
     padding-bottom: 1rem;
     text-align: center;
-    color: #fff;
+    color: var(--white);
 }
 
 .fa-map-marker-alt,
 .fa-phone-alt,
 .fa-envelope{
-    color: orangered;
+    color: var(--orange);
 }
 .datos-contacto li{
     font-weight: 700;
@@ -396,6 +422,10 @@ section h2{
 @media (max-width: 768px) {
     .derechos{
         padding-top: 1rem;
+        margin-top: 0;
+    }
+    .footer{
+        padding: 0;
     }
 }
 
@@ -412,8 +442,8 @@ section h2{
     z-index: 100;
 }
 #carga{
-    border: 15px solid #fff;
-    border-top-color: orangered ;
+    border: 15px solid var(--white);
+    border-top-color: var(--orange) ;
     height: 100px;
     width: 100px;
     border-radius: 100%;
@@ -432,4 +462,21 @@ section h2{
 @keyframes girar {
     from{ transform: rotate(0deg);}
     to{ transform: rotate(360deg);}
+}
+
+/*RETACHAR PA ARRIBA XD*/
+.ocultar{
+    display: none;
+}
+.mostrar{
+    display:inline-block;
+}
+.retachar{
+    position: fixed;
+    background-color: var(--orange);
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.7rem 1rem;
+    border-radius: 50%;
+    border: 1px solid var(--white);
 }

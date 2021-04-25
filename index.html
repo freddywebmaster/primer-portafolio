@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Global site tag (gtag.js) - GOOGLE ANALITICS -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-195368316-1">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-195368316-1');
+</script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
@@ -16,6 +26,11 @@
 <body>
     <div id="contenedor_carga">
         <div id="carga"></div>
+    </div>
+    <div id="return" class="retachar ocultar animacion">
+        <div>
+            <a href="#head"><i class="fas fa-angle-up"></i></a>
+        </div>
     </div>
     <header id="head" class="contenedor-a">
         <nav>
@@ -38,7 +53,7 @@
         <div class="contenido">
             <div class="contenido-header">
                 <p>Hola, Me llamo</p>
-                <h1>Freddy Gutierrez <i class="fas fa-mug-hot"></i></h1>
+                <h1 class="title-w">Freddy Gutierrez <i class="fas fa-mug-hot"></i></h1>
                 <div class="typed">
                     <p id="typed3" class="type"></p>
                     <p class="barra-typed">|</p>
@@ -55,10 +70,10 @@
             </div>
             <div class="skills">
                 <div class="description">
-                    <span class="title-info">Acerca de</span>
+                    <span class="title-info title-w">Acerca de</span>
                     <div class="line2"></div>
                     <h3>Quien soy</h3>
-                    <p>Hola soy Freddy Gutiererez, tengo 20 años y soy actualmente estudiante de ingenieria en sistemas, he aprendido por mi cuenta con cursos de Udemy, Platzi o Youtube</p>
+                    <p>Hola soy Freddy Gutiererez, tengo 20 años y soy Desarrollador Front-End, que no te engañe mi edad, me he esforzado estudiando dia a dia. he aprendido por mi cuenta con cursos de Udemy, Platzi y Youtube</p>
                 </div>
                 <div class="languajes">
                     <div class="habilidad">
@@ -122,7 +137,7 @@
                         <div class="estrellas">
                             <i class="fas fa-star star-gold"></i>
                             <i class="fas fa-star star-gold"></i>
-                            <i class="fas fa-star star-silver"></i>
+                            <i class="fas fa-star star-gold"></i>
                             <i class="fas fa-star star-silver"></i>
                             <i class="fas fa-star star-silver"></i>
                         </div>
@@ -156,18 +171,21 @@
                             <i class="fas fa-star star-gold"></i>
                             <i class="fas fa-star star-gold"></i>
                             <i class="fas fa-star star-gold"></i>
-                            <i class="fas fa-star star-silver"></i>
+                            <i class="fas fa-star star-gold"></i>
                             <i class="fas fa-star star-silver"></i>
                         </div>
                     </div>
                 </div>
-                <a href="#" class="btn btn-secundario m-top"> Download CV</a>
+                <div class="btn-main">
+                    <a href="" class="btn btn-secundario m-top m-right">Descargar CV</a>
+                <a href="" class="btn btn-secundario m-top">Visitar Blog</a>
+                </div>
             </div>
         </div>
     </main>
     <!--Proyectos Cards-->
     <section id="proyectos" class="proyectos">
-        <h2 class="m-top">Proyectos</h2>
+        <h2 class="m-top title-w">Proyectos</h2>
         <p>Estos son algunos de mis proyectos</p>
         <br>
         <div class="line"></div>
@@ -179,7 +197,7 @@
                     </div>
                     <div class="info-proyecto">
                         <div class="title-proyect">
-                            <h3>Tarjetas con React</h3>
+                            <h3 class="title-w">Tarjetas con React</h3>
                             <i class="far fa-plus-square"></i>
                         </div>
                         <div class="fecha-proyecto">
@@ -197,7 +215,7 @@
                     </div>
                     <div class="info-proyecto">
                         <div class="title-proyect">
-                            <h3>Pagina de Informatica</h3>
+                            <h3 class="title-w">Pagina de Informatica</h3>
                             <i class="far fa-plus-square"></i>
                         </div>
                         <div class="fecha-proyecto">
@@ -215,7 +233,7 @@
                     </div>
                     <div class="info-proyecto">
                         <div class="title-proyect">
-                            <h3>Blog De Cafe</h3>
+                            <h3 class="title-w">Blog De Cafe</h3>
                             <i class="far fa-plus-square"></i>
                         </div>
                         <div class="fecha-proyecto">
@@ -237,7 +255,7 @@
                     </div>
                     <div class="info-proyecto">
                         <div class="title-proyect">
-                            <h3>Venta de webs FSpages</h3>
+                            <h3 class="title-w">Venta de webs FSpages</h3>
                             <i class="far fa-plus-square"></i>
                         </div>
                         <div class="fecha-proyecto">
@@ -255,7 +273,7 @@
                     </div>
                     <div class="info-proyecto">
                         <div class="title-proyect">
-                            <h3>Freddy's Food</h3>
+                            <h3 class="title-w">Freddy's Food</h3>
                             <i class="far fa-plus-square"></i>
                         </div>
                         <div class="fecha-proyecto">
@@ -273,7 +291,7 @@
                     </div>
                     <div class="info-proyecto">
                         <div class="title-proyect">
-                            <h3>Pagina de Autolavado</h3>
+                            <h3 class="title-w">Pagina de Autolavado</h3>
                             <i class="far fa-plus-square"></i>
                         </div>
                         <div class="fecha-proyecto">
@@ -294,7 +312,7 @@
             <br>
             <br>
             <div class="contacto">
-                <h2>Contactame</h2>
+                <h2 class="title-w">Contactame</h2>
                 <div class="line2"></div>
                 <br>
             <div class="mas-info">
@@ -317,7 +335,7 @@
                 </ul>
               </div>
             </div>
-            <p class="derechos">Derechos reservados <span class="derechos">Freddy Gutierrez</span>&copy;2021</p>
+            <p class="derechos m-top-4">&copy;Copyright <span class="derechos title-w">Freddy Gutierrez</span> Todos los derechos reservados</p>
     </footer>
     </div>
     <script src="js/index.js"></script>
