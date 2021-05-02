@@ -12,7 +12,7 @@ window.addEventListener('scroll', function(){
 //TYPED INICIACION
 window.addEventListener('load', function(){
     var typed3 = new Typed('#typed3', {
-        strings: ['Desarrollador Front-End', 'Programador Jr', 'Diseñador Web'],
+        strings: ['Front-End Developer', 'Jr Developer', 'Web Designer'],
         typeSpeed: 75,
         backSpeed: 50,
         smartBackspace: true,
@@ -45,6 +45,26 @@ window.addEventListener('resize', function(){
 
     }
 });
+// SMOOT SCROLL
+const slideLinks = () =>{
+    const links = document.querySelectorAll("a");
+
+    for (const link of links) {
+    link.addEventListener("click", clickHandler);
+    }
+
+    function clickHandler(e) {
+    e.preventDefault();
+    const href = this.getAttribute("href");
+    const offsetTop = document.querySelector(href).offsetTop;
+    
+    scroll({
+        top: offsetTop-50,
+        behavior: "smooth"
+        });
+    }
+}
+slideLinks();
 
 //SPINNER
 let spinner = document.querySelector('#contenedor_carga');
@@ -52,3 +72,7 @@ let spinner = document.querySelector('#contenedor_carga');
             spinner.style.visibility = 'hidden';
             spinner.style.opacity = '0';
         });
+const alerta = () =>{
+    alert('Coming Soon');
+}
+
