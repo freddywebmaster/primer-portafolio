@@ -1,0 +1,56 @@
+{
+    "projects":
+	[
+		{
+            "title":"FSPages",
+            "category":"Web Desing",
+			"img":"work1.png",
+			"date":"14 ene. 2021",
+			"visit":"https://fspages.netlify.app/",
+			"code":"https://github.com/FreddyGames69/fspages"
+        },
+		{
+            "title":"Weather APP",
+            "category":"Vanilla JS",
+			"img":"work2.png",
+			"date":"03 dic. 2020",
+			"visit":"https://freddy-clima.netlify.app/",
+			"code":"https://github.com/FreddyGames69/freddy-clima"
+        },
+		{
+            "title":"Image Search Engine",
+            "category":"Vanilla JS",
+			"img":"work3.png",
+			"date":"26 dic. 2020",
+			"visit":"https://freddy-images.netlify.app/",
+			"code":"https://github.com/FreddyGames69/photos-app"
+        },
+		{
+            "title":"Linux Blog",
+            "category":"WP API REST",
+			"img":"work4.png",
+			"date":"01 abr. 2020",
+			"visit":"https://freddy-linux.netlify.app/",
+			"code":"https://github.com/FreddyGames69/linux-blog"
+        },
+		{
+            "title":"Star Wash",
+            "category":"Web Desing",
+			"img":"work5.png",
+			"date":"03 oct. 2020",
+			"visit":"https://star-wash.netlify.app/",
+			"code":"https://github.com/FreddyGames69/star-wash"
+        },
+		{
+            "title":"Tacos M&M",
+            "category":"Web Desing",
+			"img":"work6.png",
+			"date":"02 may. 2021",
+			"visit":"https://tacosmm.netlify.app/",
+			"code":"https://github.com/FreddyGames69/TACOS-M-M"
+        }
+    ],
+	"info":{
+		"nombre":"freddy gutierrez"
+	}
+}
