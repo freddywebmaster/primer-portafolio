@@ -12,7 +12,7 @@ window.addEventListener('scroll', function(){
 //TYPED INICIACION
 window.addEventListener('load', function(){
     var typed3 = new Typed('#typed3', {
-        strings: ['Front-End Developer', 'Jr Developer', 'Web Designer'],
+        strings: ['Desarrollador Front-End', 'Programador Jr', 'Diseñador Web'],
         typeSpeed: 75,
         backSpeed: 50,
         smartBackspace: true,
@@ -68,11 +68,11 @@ slideLinks();
 
 //SPINNER
 let spinner = document.querySelector('#contenedor_carga');
-        window.addEventListener('load', function(){
-            spinner.style.visibility = 'hidden';
-            spinner.style.opacity = '0';
-        });
+window.addEventListener('load', function(){
+    spinner.style.visibility = 'hidden';
+    spinner.style.opacity = '0';
+});
+
 const alerta = () =>{
     alert('Coming Soon');
 }
-

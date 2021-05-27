@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <!-- Global site tag (gtag.js) - GOOGLE ANALITICS -->
@@ -9,7 +9,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'UA-195368316-1');
     </script>
     <meta charset="UTF-8">
@@ -18,13 +17,10 @@
     <meta name="description" content="Programador junior, Desarrollador web Guatemala, deseñador web">
     <!--FAVI ICON-->
     <link href="img/favicon.png" rel="icon">
-    <!--FONT aAWESOME (ICONOS)-->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <!--Librerias-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <title>Freddy Gutierrez | Front-End Developer| Jr Developer | Guatemala Dev | Web Designer</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -41,154 +37,51 @@
     <header id="head" class="contenedor-a">
         <nav>
             <div class="logo">
-                <H3><i class="fa fa-terminal"></i> Freddy Gutierrez</H3>
+                <a href="#head"><h3><i class="fa fa-terminal"></i> Freddy Gutierrez</h3></a>
             </div>
             <div class="icono" id="icono">
                 <span>&#9776;</span>
             </div>
             <div class="enlaces uno" id="enlaces">
-                <a href="#head">Home</a>
-                <a href="#info">About</a>
-                <a href="#proyectos">Projects</a>
-                <a href="#servicios">Services</a>
-                <a href="#contacto">Contact</a>
+                <a href="#info">Info</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#servicios">Habilidades</a>
+                <a href="#contacto">Contacto</a>
             </div>
         </nav>
         <div class="contenido">
             <div class="contenido-header">
-                <p>Hello, I'm</p>
+                <p>Bienvenido, Soy</p>
                 <h1 class="title-w">Freddy Gutierrez <i class="fas fa-mug-hot"></i></h1>
                 <div class="typed">
                     <p id="typed3" class="type"></p>
                     <p class="barra-typed">|</p>
                 </div>
-                <a href="#info" class="btn btn-primario">Show More</a>
+                <a href="#info" class="btn btn-primario">Ver más</a>
             </div>
         </div>
     </header>
     <!--Mi Info-->
     <main id="info" class="info">
-        <div class="contenedor-b">
-            <div class="foto">
-                <img src="img/me.jpg" alt="Freddy Gutierrez">
+        <div class="yo">
+            <img src="img/me.jpg" alt="Freddy Gutierrez">
+        </div>
+        <div class="me-info">
+            <h2><span class="amarillo">Hola</span>,</h2>
+            <h2>Soy Desarrollador <span class="naranja">Web</span></h2>
+            <div class="line2"></div>
+            <p>Tengo 20 años de edad, me apasiona este mundo desde los 16 años, he aprendido por mi cuenta con ayuda de internet, cursos en Udemy o Youtube. Puedo Maquetar sitios web, Desarrollar Aplicaciones Web, PWA, SPA, Consumir API's y muchas cosas mas.</p>
+            <div class="lenguajes-pack">
+                <img src="img/skills/html5.svg" alt="">
+                <img src="img/skills/css.svg" alt="">
+                <img src="img/skills/js.svg" alt="">
+                <img src="img/skills/bootstrap.svg" alt="">
+                <img src="img/skills/jquery.svg" alt="">
+                <img src="img/skills/react.svg" alt="">
+                <img src="img/skills/node.png" alt="">
+                <img src="img/skills/sql.svg" alt="">
             </div>
-            <div class="skills">
-                <div class="description">
-                    <span class="title-info title-w">About Me</span>
-                    <div class="line2"></div>
-                    <h3>who I am?</h3>
-                    <p>Hi, I'm Freddy Gutiererez, I'm 20 years old and I'm a Front-End Developer. Don't be fooled by my
-                        age, I have made an effort to study every day. I have learned on my own with courses from Udemy,
-                        Platzi and Youtube</p>
-                </div>
-                <div class="languajes">
-                    <div class="habilidad">
-                        <img src="img/skills/html5.svg" alt="HTML5">
-                        <p>HTML5</p>
-                        <div class="estrellas">
-                            <i class="fas fa-star star-gold"></i>
-                            <i class="fas fa-star star-gold"></i>
-                            <i class="fas fa-star star-gold"></i>
-                            <i class="fas fa-star star-gold"></i>
-                            <i class="fas fa-star star-gold"></i>
-                        </div>
-                    </div>
-                    <div class="habilidad">
-                        <img src="img/skills/css.svg" alt="css3">
-                        <p>CSS</p>
-                        <div class="estrellas">
-                            <i class="fas fa-star star-gold"></i>
-                            <i class="fas fa-star star-gold"></i>
-                            <i class="fas fa-star star-gold"></i>
-                            <i class="fas fa-star star-gold"></i>
-                            <i class="fas fa-star star-gold"></i>
-                        </div>
-                    </div>
-                    <div class="habilidad">
-                        <img src="img/skills/bootstrap.svg" alt="bootstrap">
-                        <p>bootstrap</p>
-                        <div class="estrellas">
-                            <i class="fas fa-star star-gold"></i>
-                            <i class="fas fa-star star-gold"></i>
-                            <i class="fas fa-star star-gold"></i>
-                            <i class="fas fa-star star-gold"></i>
-                            <i class="fas fa-star star-silver"></i>
-                        </div>
-                    </div>
-                    <div class="habilidad">
-                        <img src="img/skills/js.svg" alt="javascript">
-                        <p>javascript</p>
-                        <div class="estrellas">
-                            <i class="fas fa-star star-gold"></i>
-                            <i class="fas fa-star star-gold"></i>
-                            <i class="fas fa-star star-gold"></i>
-                            <i class="fas fa-star star-silver"></i>
-                            <i class="fas fa-star star-silver"></i>
-                        </div>
-                    </div>
-                    <div class="habilidad">
-                        <img src="img/skills/react.svg" alt="react">
-                        <p>React</p>
-                        <div class="estrellas">
-                            <p>(learning)</p>
-                            <!-- <i class="fas fa-star star-gold"></i>
-                            <i class="fas fa-star star-gold"></i>
-                            <i class="fas fa-star star-gold"></i>
-                            <i class="fas fa-star star-silver"></i>
-                            <i class="fas fa-star star-silver"></i> -->
-                        </div>
-                    </div>
-                    <div class="habilidad">
-                        <img src="img/skills/node.png" alt="csharp">
-                        <p>NodeJS</p>
-                        <div class="estrellas">
-                            <i class="fas fa-star star-gold"></i>
-                            <i class="fas fa-star star-gold"></i>
-                            <i class="fas fa-star star-gold"></i>
-                            <i class="fas fa-star star-silver"></i>
-                            <i class="fas fa-star star-silver"></i>
-                        </div>
-                    </div>
-                    <div class="habilidad">
-                        <img src="img/skills/php.svg" alt="PHP">
-                        <p>PHP</p>
-                        <div class="estrellas">
-                            <i class="fas fa-star star-gold"></i>
-                            <i class="fas fa-star star-gold"></i>
-                            <i class="fas fa-star star-gold"></i>
-                            <i class="fas fa-star star-silver"></i>
-                            <i class="fas fa-star star-silver"></i>
-                        </div>
-                    </div>
-                    <div class="habilidad">
-                        <img src="img/skills/laravel.svg" alt="laravel">
-                        <p>Laravel</p>
-                        <div class="estrellas">
-                            <p>(in the future)</p>
-                            <!-- <i class="fas fa-star star-gold"></i>
-                            <i class="fas fa-star star-gold"></i>
-                            <i class="fas fa-star star-gold"></i>
-                            <i class="fas fa-star star-silver"></i>
-                            <i class="fas fa-star star-silver"></i> -->
-                        </div>
-                    </div>
-                    <div class="habilidad">
-                        <img src="img/skills/sql.svg" alt="sql">
-                        <p>SQL</p>
-                        <div class="estrellas">
-                            <i class="fas fa-star star-gold"></i>
-                            <i class="fas fa-star star-gold"></i>
-                            <i class="fas fa-star star-gold"></i>
-                            <i class="fas fa-star star-gold"></i>
-                            <i class="fas fa-star star-silver"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="btn-main">
-                    <a onclick="alerta()" class="btn btn-secundario m-top m-right">Download CV</a>
-                    <a onclick="alerta()" class="btn btn-secundario m-top">Visit Blog</a>
-                </div>
-            </div>
+            <a class="btn btn-primario m-top" href="#">Descargar CV</a>
         </div>
     </main>
     <!--Proyectos Cards-->

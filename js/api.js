@@ -22,9 +22,9 @@ fetch(url)
                         </div>
                         <div class="botones-proyectos">
                             <a target="_blank" class="btn btn-secundario m-top" href="${datos.projects[i].visit}"><i
-                                    class="fas fa-globe-americas"></i> Visit</a>
+                                    class="fas fa-globe-americas"></i> Visitar</a>
                             <a target="_blank" class="btn btn-tres m-top" href="${datos.projects[i].code}"><i
-                                    class="fas fa-code"></i> Source</a>
+                                    class="fas fa-code"></i> Codigo</a>
                         </div>
                     </div>
                 </div>
